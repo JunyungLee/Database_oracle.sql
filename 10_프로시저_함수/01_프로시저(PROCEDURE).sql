@@ -92,11 +92,9 @@ BEGIN
     DBMS_OUTPUT.PUT_LINE(V_CUSTID||','||V_NAME||','||V_ADDRESS||','||V_PHONE);
 END;
 
---실행
 EXECUTE CUSTOMER_DISP(1);
 EXEC CUSTOMER_DISP(3);
 
---삭제 
 DROP PROCEDURE CUSTOMER_DISP;
 
 ---------------------------------------------
@@ -117,33 +115,57 @@ BEGIN
     
     DBMS_OUTPUT.PUT_LINE(V_CUSTID||','||V_NAME||','||V_ADDRESS||','||V_PHONE);
 END;
---================================================================================
+--------------------------------------------
+--==================================
+-- 프로시저 파라미터 유형 : IN, OUT 사용 
+CREATE OR REPLACE PROCEDURE GET_BOOKINFO (
+    IN_BOOKID IN NUMBER, --매개변수 선언시 타입만 지정
+    OUT_BOOKNAME OUT VARCHAR2,
+    OUT_PUBLISHER OUT VARCHAR2,
+    OUT_PRICE OUT NUMBER
+) AS 
+    --%TYPE 사용 : 테이블명.컬럼명%TYPE
+    --테이블 컬럼과 동일한 타입으로 설정(변경시에도 자동 적용)
+    V_BOOKID BOOK.BOOKID%TYPE;
+    V_BOOKNAME BOOK.BOOKNAME%TYPE;
+    V_PUBLISHER BOOK.PUBLISHER%TYPE;
+    V_PRICE BOOK.PRICE%TYPE;
+BEGIN
+    --IN, OUT 매개변수 값 출력
+    DBMS_OUTPUT.PUT_LINE('GET_BOOKINFO 매개변수값 - ' ||IN_BOOKID ||','|| 
+            OUT_BOOKNAME ||','|| OUT_PUBLISHER ||','|| OUT_PRICE);
+    
+    SELECT BOOKID, BOOKNAME, PUBLISHER, PRICE
+    INTO V_BOOKID, V_BOOKNAME, V_PUBLISHER, V_PRICE
+    FROM BOOK
+    WHERE BOOKID = IN_BOOKID;
+    
+    DBMS_OUTPUT.PUT_LINE('GET_BOOKINFO 변수값 : '|| V_BOOKID ||','|| 
+            V_BOOKNAME ||','|| V_PUBLISHER ||','|| V_PRICE);
+    
+    -- 선택된 데이터를 호출한 곳으로 전달하기 위해서 OUT 유형 매개변수에 저장
+    OUT_BOOKNAME := V_BOOKNAME;
+    OUT_PUBLISHER := V_PUBLISHER;
+    OUT_PRICE := V_PRICE;
+    
+END GET_BOOKINFO;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+--==========------================
+-- GET_BOOKINFO 프로시저 OUT 매개변수 값 확인용(테스트) 프로시저
+CREATE OR REPLACE PROCEDURE GET_BOOKINFO_TEST (
+    IN_BOOKID IN NUMBER
+) AS 
+    V_BOOKNAME BOOK.BOOKNAME%TYPE;
+    V_PUBLISHER BOOK.PUBLISHER%TYPE;
+    V_PRICE BOOK.PRICE%TYPE;
+BEGIN
+    DBMS_OUTPUT.PUT_LINE('GET_BOOKINFO_TEST 입력받은값(ID) : ' || IN_BOOKID);
+    
+    -- GET_BOOKINFO 프로시저 실행(호출)
+    GET_BOOKINFO(IN_BOOKID, V_BOOKNAME, V_PUBLISHER, V_PRICE);
+    
+    -- 프로시저로 부터 전달받은 값(OUT) 화면 출력
+    DBMS_OUTPUT.PUT_LINE('GET_BOOKINFO_TEST 전달받은값 : ' || 
+            V_BOOKNAME ||','|| V_PUBLISHER ||','|| V_PRICE);
+            
+END GET_BOOKINFO_TEST;
