@@ -95,6 +95,10 @@ ON D.DEPARTMENT_ID = E.DEPARTMENT_ID JOIN LOCATIONS L
 ON D.LOCATION_ID = L.LOCATION_ID
 WHERE CITY = 'Oxford';
 
+--뷰(VIEW) 사용
+SELECT 'HR-COMPANY' AS COMPANY_NAME, LAST_NAME||' '||FIRST_NAME AS NAME,
+DEPARTMENT_NAME ,JOB_ID, CITY FROM EMP_DETAILS_VIEW
+WHERE CITY = 'Oxford';
 /* 
 ■9 HR 스키마에 있는 Employees, Departments 테이블의 구조를 파악한 후 
   사원수가 다섯 명 이상인 부서의 부서이름과 사원 수를 출력하시오. 
