@@ -1,0 +1,39 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="DEPT" directorySegmentName="seg_0" id="2A91DB3B-8445-148C-1402-EB9B83754E40">
+<createdBy>itwill</createdBy>
+<createdTime>2023-08-17 06:39:43 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<schemaObject>D3C18BD3-6C3E-387E-669E-9BAAE562D196</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>1CAABCB6-0833-D5E1-E1A5-0AFFE9969495</segment>
+<tableSpace>E0D88EC7-2817-2226-3507-0179D5B6908F</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NAME" id="6C767B51-A7EA-DA7C-DEB8-B4FA6E323D6A">
+<createdBy>itwill</createdBy>
+<createdTime>2023-08-17 06:39:43 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="78AA3CF0-30A8-0CF4-2304-ACE8B536495F">
+<createdBy>itwill</createdBy>
+<createdTime>2023-08-17 06:39:43 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DEPT_PK" id="388941B1-1858-5CAC-EDB8-EB6B75796B24">
+<createdBy>itwill</createdBy>
+<createdTime>2023-08-17 06:39:43 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<schemaObject>D3C18BD3-6C3E-387E-669E-9BAAE562D196</schemaObject>
+<segment>CD0508B6-2610-1D2B-3A4A-FDDCDA7D5466</segment>
+<tableSpace>E0D88EC7-2817-2226-3507-0179D5B6908F</tableSpace>
+<indexSegment>CD0508B6-2610-1D2B-3A4A-FDDCDA7D5466</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

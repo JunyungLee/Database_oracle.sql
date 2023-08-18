@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="EMP01" directorySegmentName="seg_0" id="2F93A02D-1885-F58A-93CE-74EF3968CD56">
+<createdBy>itwill</createdBy>
+<createdTime>2023-08-17 06:39:43 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<schemaObject>D3C18BD3-6C3E-387E-669E-9BAAE562D196</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>1CAABCB6-0833-D5E1-E1A5-0AFFE9969495</segment>
+<tableSpace>E0D88EC7-2817-2226-3507-0179D5B6908F</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="EMPNO" id="B891A24D-6DFC-C03C-5DDB-4A09EF8892AE">
+<createdBy>itwill</createdBy>
+<createdTime>2023-08-17 06:39:43 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ENAME" id="BFD41632-B14D-05EB-E088-5F1594392FFE">
+<createdBy>itwill</createdBy>
+<createdTime>2023-08-17 06:39:43 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEPTNO" id="DA780716-5647-E12C-9F6F-D63F85E3512D">
+<createdBy>itwill</createdBy>
+<createdTime>2023-08-17 06:39:43 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="JOB" id="E6B60F55-B3AD-1554-D233-B02C62C44997">
+<createdBy>itwill</createdBy>
+<createdTime>2023-08-17 06:39:43 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="EMP01_EMPNO_PK" id="3E921281-EF9B-4AC2-12C6-B94A2DF26027">
+<createdBy>itwill</createdBy>
+<createdTime>2023-08-17 06:39:43 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<schemaObject>D3C18BD3-6C3E-387E-669E-9BAAE562D196</schemaObject>
+<segment>CD0508B6-2610-1D2B-3A4A-FDDCDA7D5466</segment>
+<tableSpace>E0D88EC7-2817-2226-3507-0179D5B6908F</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SYS_C007022" id="FBE15C4E-B469-AA69-E077-5F2B697E4FE0">
+<createdBy>itwill</createdBy>
+<createdTime>2023-08-17 06:39:43 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="EMP01_EMPNO_PK" id="E442824D-65C1-6B0B-A627-E4E248D8F3CB">
+<createdBy>itwill</createdBy>
+<createdTime>2023-08-17 06:39:43 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<segment>CD0508B6-2610-1D2B-3A4A-FDDCDA7D5466</segment>
+<tableSpace>E0D88EC7-2817-2226-3507-0179D5B6908F</tableSpace>
+<existingIndex>3E921281-EF9B-4AC2-12C6-B94A2DF26027</existingIndex>
+<indexSegment>CD0508B6-2610-1D2B-3A4A-FDDCDA7D5466</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

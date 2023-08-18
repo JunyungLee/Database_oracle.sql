@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A5581BA5-0B06-7310-455E-70DB91FFB3C8" schemaObject="D3C18BD3-6C3E-387E-669E-9BAAE562D196" name="EMP03">
+<sourceConnName>MADANG</sourceConnName>
+<sourceObjSchema>MADANG</sourceObjSchema>
+<sourceObjName>EMP03</sourceObjName>
+<createdBy>itwill</createdBy>
+<createdTime>2023-08-17 06:39:43 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EMPNO" id="FD6EDA68-EAB7-EB1B-E199-13D8060B4ED2">
+<sourceConnName>MADANG</sourceConnName>
+<sourceObjSchema>EMP03</sourceObjSchema>
+<sourceObjName>EMPNO</sourceObjName>
+<createdBy>itwill</createdBy>
+<createdTime>2023-08-17 06:39:43 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ENAME" id="D65397D5-B1A2-B365-DCC1-E3DC38DFDE02">
+<sourceConnName>MADANG</sourceConnName>
+<sourceObjSchema>EMP03</sourceObjSchema>
+<sourceObjName>ENAME</sourceObjName>
+<createdBy>itwill</createdBy>
+<createdTime>2023-08-17 06:39:43 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>EMP03_ENAME_NN</notNullConstraintName>
+</Column>
+<Column name="JOB" id="183E93AD-19A5-E299-38B7-E92DD712A559">
+<sourceConnName>MADANG</sourceConnName>
+<sourceObjSchema>EMP03</sourceObjSchema>
+<sourceObjName>JOB</sourceObjName>
+<createdBy>itwill</createdBy>
+<createdTime>2023-08-17 06:39:43 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPTNO" id="A4FE3D65-C5C6-F7C8-66FD-D5412F2BB1B3">
+<sourceConnName>MADANG</sourceConnName>
+<sourceObjSchema>EMP03</sourceObjSchema>
+<sourceObjName>DEPTNO</sourceObjName>
+<createdBy>itwill</createdBy>
+<createdTime>2023-08-17 06:39:43 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0300CDE7-7573-47B3-7E6D-AB02ED9618D7" referredColumn="78AA3CF0-30A8-0CF4-2304-ACE8B536495F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8FEE61CA-9D13-4DBE-4663-37C298D4A33C" name="EMP03_EMPNO_PK">
+<sourceConnName>MADANG</sourceConnName>
+<sourceObjSchema>MADANG</sourceObjSchema>
+<sourceObjName>EMP03_EMPNO_PK</sourceObjName>
+<createdBy>itwill</createdBy>
+<createdTime>2023-08-17 06:39:43 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD6EDA68-EAB7-EB1B-E199-13D8060B4ED2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="56F8CF9C-58C0-21BC-F6EF-5DBC6FCA1BEB" schemaObject="D3C18BD3-6C3E-387E-669E-9BAAE562D196" name="EMP03_EMPNO_PK">
+<sourceConnName>MADANG</sourceConnName>
+<sourceObjSchema>MADANG</sourceObjSchema>
+<sourceObjName>EMP03_EMPNO_PK</sourceObjName>
+<createdBy>itwill</createdBy>
+<createdTime>2023-08-17 06:39:43 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD6EDA68-EAB7-EB1B-E199-13D8060B4ED2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0CDDC7CD-E4B2-3529-9210-871CA6DEDE36" name="FK_EMP03_DEPTNO">
+<createdBy>itwill</createdBy>
+<createdTime>2023-08-17 06:39:43 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A4FE3D65-C5C6-F7C8-66FD-D5412F2BB1B3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

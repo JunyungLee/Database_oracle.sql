@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FB4FD01E-9FB2-F565-C11C-6B94E4B97A31" containerWithKeyObject="A5751167-1A72-8168-2B34-E52C4E312516" localFKIndex="96E65C6C-A625-4C6F-D745-99599C1F7D87" name="EMP02_DEPTNO_FK">
+<sourceConnName>MADANG</sourceConnName>
+<sourceObjSchema>MADANG</sourceObjSchema>
+<sourceObjName>EMP02_DEPTNO_FK</sourceObjName>
+<createdBy>itwill</createdBy>
+<createdTime>2023-08-17 06:39:43 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<referredTableLongName>MADANG.DEPT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2A91DB3B-8445-148C-1402-EB9B83754E40</referredTableID>
+<keyObject>388941B1-1858-5CAC-EDB8-EB6B75796B24</keyObject>
+<referredKeyID>388941B1-1858-5CAC-EDB8-EB6B75796B24</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
