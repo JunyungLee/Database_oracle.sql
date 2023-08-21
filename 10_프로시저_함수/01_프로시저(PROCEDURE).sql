@@ -1,3 +1,4 @@
+
 --PL/SQL 프로시저(PROCEDURE) - 오라클
 --SYSTEM 유저에서 
 SET SERVEROUTPUT ON; --서버쪽 출력화면을 볼 수 있게 설정 
